@@ -1,25 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dds.monedero.model;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-/**
- *
- * @author ERWIN AURIA
- */
 public class MovimientoCuenta {
     
-    private LocalDateTime fecha;
+    private LocalDate fecha;
     private double monto;
     private TipoMovimiento tipo;
     
     public MovimientoCuenta (double monto, TipoMovimiento tipo) {
-        this.fecha= LocalDateTime.now();
+        this.fecha= LocalDate.now();
         this.monto = monto;
     }
     
@@ -27,8 +17,11 @@ public class MovimientoCuenta {
         return monto;
     }
 
-    public LocalDateTime getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
-       
+
+    public TipoMovimiento getTipo() {
+        return tipo;
+    }       
 }

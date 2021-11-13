@@ -38,6 +38,5 @@ public class CuentaBancaria {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
-    }
-    
+    }    
 }
