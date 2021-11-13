@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
  *
  * @author ERWIN AURIA
  */
-public class MovimientosCuenta {
+public class MovimientoCuenta {
     
     private LocalDateTime fecha;
     private double monto;
     private TipoMovimiento tipo;
     
-    public MovimientosCuenta (double monto, TipoMovimiento tipo) {
+    public MovimientoCuenta (double monto, TipoMovimiento tipo) {
         this.fecha= LocalDateTime.now();
         this.monto = monto;
     }

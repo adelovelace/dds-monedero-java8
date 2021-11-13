@@ -12,7 +12,7 @@ package dds.monedero.model;
 public class AgregarMovimiento {
     
     
-    public AgregarMovimiento(CuentaBancaria cuenta,Movimiento movimiento){
+    public AgregarMovimiento(CuentaBancaria cuenta,MovimientoCuenta movimiento){
         cuenta.getMovimientos().add(movimiento);
     }
     
